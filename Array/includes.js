@@ -2,7 +2,7 @@ Array.prototype.customIncludes = function (value, index = 0) {
   let startIndex = 0;
   if (index < 0) {
     startIndex = this.length + index;
-    startIndex < 0 ? (startIndex = 0) : (startIndex = startIndex);
+    startIndex < 0 ? (startIndex = 0) : startIndex;
   }
   for (startIndex; startIndex < this.length; startIndex++) {
     if (value === this[startIndex]) {
